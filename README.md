@@ -21,7 +21,7 @@ Salt competes primarily with Puppet, Chef, Ansible, and StackStorm.
 ansible vs saltstack vs stackstorm: https://medium.com/@anthonypjshaw/ansible-v-s-salt-saltstack-v-s-stackstorm-3d8f57149368  
 
 # saltstack architecture: 
-Client server model: minions and master. 
+Client server model: minions and master.  
 proxy: enables master to control devices without minion. Examples include:  
 - devices that could run a minion, but for whatver reasons, will not.
 - devices that cannot run a standard salt-minion
