@@ -1,6 +1,3 @@
-# About this repo
-How to automate Junos with SaltStack
-
 # About SaltStack
 
 SaltStack is an event driven infrastructure tool (like StackStorm), with good network automation capabilities.  
