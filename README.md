@@ -116,6 +116,10 @@ salt -N group1 test.ping
 ```
 salt -G 'os_family:junos' junos.cli "show version"
 ```
+# Display return data in various format
+```
+salt -G 'os_family:junos' junos.cli "show version"
+```
 ```
 salt -G 'os_family:junos' junos.cli "show version" --output=yaml
 ```
