@@ -20,7 +20,7 @@ https://saltstack.com/
 Salt competes primarily with Puppet, Chef, Ansible, and StackStorm.  
 ansible vs saltstack vs stackstorm: https://medium.com/@anthonypjshaw/ansible-v-s-salt-saltstack-v-s-stackstorm-3d8f57149368  
 
-# saltstack architecture: 
+# SaltStack architecture: 
 Client server model: minions and master.  
 proxy: enables master to control devices without minion. Examples include:  
 - devices that could run a minion, but for whatver reasons, don't.
@@ -30,26 +30,19 @@ proxy: enables master to control devices without minion. Examples include:
 
 # Junos automation with Saltstack
 
-## Junos proxy
 SaltStack supports Junos automation with a Junos proxy: 
 - it provides execution modules and state modules for junos.  
 - Junos proxy controls junos devices without installing salt on device. There is no salt-minion.  
 - It uses Junos API (pyez and netconf).  
 - Junos facts are stored in grains.  
 - Apart from that there is a junos syslog engine.
+ - listens to syslog events 
+ - extracts event information 
+ - sends it on the master/minion event bus.
+ - Control the type of events to be sent.
+ - Salt reactors has the ability to take actions according to these events (event driven automation).
 
-
-## Junos syslog engine:
-It: 
-- listens to syslog events 
-- extracts event information 
-- sends it on the master/minion event bus.
-- Control the type of events to be sent.
-Salt reactors has the ability to take actions according to events.
-
-## napalm
-Salt supports also Napalm (Network Automation and Programmability Abstraction Layer with Multivendor support).  
-So you can also use this to automate Junos.  
+Salt supports also Napalm (Network Automation and Programmability Abstraction Layer with Multivendor support). So you can also use it to automate Junos.  
 
 # SaltStack versions: 
 https://docs.saltstack.com/en/latest/topics/releases/version_numbers.html  
