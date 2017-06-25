@@ -88,8 +88,10 @@ sls files.
 the pillar has a top file. 
 
 ### state files: 
-sls files in yaml format.  
-kind of ansible playbooks.   
+SLS (SaLt State) files.  
+yaml format.  
+representation/description of the state in which a system should be in.   
+kind of ansible playbooks.  
 
 ## salt-minion:  
 the salt-minion is configured via the minion configuration file.
