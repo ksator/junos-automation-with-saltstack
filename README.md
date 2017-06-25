@@ -1,5 +1,5 @@
 # About this repo
-how to automate Junos with SaltStack
+How to automate Junos with SaltStack
 
 # About SaltStack
 
@@ -21,12 +21,13 @@ Salt competes primarily with Puppet, Chef, Ansible, and StackStorm.
 ansible vs saltstack vs stackstorm: https://medium.com/@anthonypjshaw/ansible-v-s-salt-saltstack-v-s-stackstorm-3d8f57149368  
 
 # SaltStack architecture: 
-Client server model: salt minions (agents) and salt master.  
-proxy: enables master to control devices without minion. Examples include:  
-- devices that could run a minion, but for whatver reasons, don't.
-- devices that cannot run a standard salt-minion
-- devices with limited CPU or memory
-- IoT
+- salt master.  
+- salt minions (agents) 
+- salt proxies: enables master to control devices without minion. Examples include:  
+ - devices that could run a minion, but for whatver reasons, don't.
+ - devices that cannot run a standard salt-minion
+ - devices with limited CPU or memory
+ - IoT
 
 # Junos automation with Saltstack
 
