@@ -1,23 +1,4 @@
 
-# SaltStack versions: 
-Nitrogen has a better network automation support than Carbon.   
-https://docs.saltstack.com/en/latest/topics/releases/version_numbers.html  
-https://en.wikipedia.org/wiki/List_of_chemical_elements  
-
-# SaltStack installation: 
-Nitrogen should be available on pypi https://pypi.python.org/pypi by July 2017. 
-At that time you will be able to install Nitrogen using
-```
-# pip install salt
-```
-Meanwhile, you can install Nitrogen from the salt github repository (https://github.com/saltstack/salt) using the git branch 2017.7:  
-```
-# pip install git+https://github.com/saltstack/salt.git@2017.7
-```
-```
-# salt --version
-salt 2017.7.0-202-g3c8dee0 (Nitrogen)
-```
 
 # SaltStack files Structure: 
 
