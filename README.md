@@ -33,7 +33,7 @@ ansible vs saltstack vs stackstorm: https://medium.com/@anthonypjshaw/ansible-v-
 # Junos automation with Saltstack
 
 SaltStack supports Junos automation with a Junos proxy: 
-- it provides execution modules and state modules for junos.  
+- it provides execution modules for junos (https://docs.saltstack.com/en/latest/ref/modules/all/salt.modules.junos.html) and state modules for junos (https://docs.saltstack.com/en/latest/ref/states/all/salt.states.junos.html)
 - Junos proxy controls junos devices without installing salt on device. There is no salt-minion.  
 - It uses Junos API: junos-eznc python library (pyez) and netconf.  
 - Junos facts are stored in grains.  
@@ -80,7 +80,6 @@ This file server is built into the master daemon and does not require a dedicate
 Default location is ```/srv/pillar```.  
 Configured via the ```file_roots``` option inside the master configuration file.  
 
-
 ### pillar: 
 The default location for the pillar is in ```/srv/pillar```.  
 The pillar location can be configured via the ```pillar_roots``` option inside the master configuration file. 
@@ -107,6 +106,16 @@ Reactor sls files follow a similar format to other sls files in Salt.
 Reactor SLS files are mapped to event in the master conf file ```/etc/salt/master``` or ```/etc/salt/master.d/reactor.conf```
 support for ```salt://``` file paths.  
 
+# Execution of arbitrary commands
+```
+# salt ex4200-7 junos.facts
+```
+```
+# salt ex4200-7 grains.items
+```
+```
+# salt "ex*" pillar.items
+```
 # flexible targeting system: 
 
 ```
