@@ -47,18 +47,18 @@ Salt supports also Napalm (Network Automation and Programmability Abstraction La
 
 # SaltStack versions: 
 https://docs.saltstack.com/en/latest/topics/releases/version_numbers.html  
-https://en.wikipedia.org/wiki/List_of_chemical_elements
+https://en.wikipedia.org/wiki/List_of_chemical_elements  
+Nitrogen has a better network automation support than Carbon.   
 
 # SaltStack installation: 
-Nitrogen has a better network automation support than Carbon.   
 Nitrogen should be available on pypi https://pypi.python.org/pypi by July 2017. 
 At that time you will be able to install Nitrogen using
 ```
-pip install salt
+# pip install salt
 ```
 Meanwhile, you can install Nitrogen from the salt github repository (https://github.com/saltstack/salt) using the branch 2017.7:  
 ```
-pip install git+https://github.com/saltstack/salt.git@2017.7
+# pip install git+https://github.com/saltstack/salt.git@2017.7
 ```
 ```
 # salt --version
