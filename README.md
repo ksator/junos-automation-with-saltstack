@@ -23,7 +23,7 @@ ansible vs saltstack vs stackstorm: https://medium.com/@anthonypjshaw/ansible-v-
 # SaltStack architecture: 
 - salt master.  
 - salt minions (agents) 
-- salt proxies (enables master to control devices without minion). Examples include
+- salt proxies (enables master to control devices without minion). Examples include:
     - devices that could run a minion, but for whatver reasons, don't.
     - devices that cannot run a standard salt-minion
     - devices with limited CPU or memory
@@ -47,9 +47,9 @@ Apart from that there is a junos syslog engine:
 Salt supports also Napalm (Network Automation and Programmability Abstraction Layer with Multivendor support). So you can also use it to automate Junos.  
 
 # SaltStack versions: 
+Nitrogen has a better network automation support than Carbon.   
 https://docs.saltstack.com/en/latest/topics/releases/version_numbers.html  
 https://en.wikipedia.org/wiki/List_of_chemical_elements  
-Nitrogen has a better network automation support than Carbon.   
 
 # SaltStack installation: 
 Nitrogen should be available on pypi https://pypi.python.org/pypi by July 2017. 
