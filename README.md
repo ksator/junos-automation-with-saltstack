@@ -35,7 +35,7 @@ SaltStack supports Junos automation with a Junos proxy:
 - Junos proxy controls junos devices without installing salt on device. There is no salt-minion.  
 - It uses Junos API (pyez and netconf).  
 - Junos facts are stored in grains.  
-- Apart from that there is a junos syslog engine.
+Apart from that there is a junos syslog engine: 
  - listens to syslog events 
  - extracts event information 
  - sends it on the master/minion event bus.
