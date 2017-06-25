@@ -1,4 +1,4 @@
-# About this this repo
+# About this repo
 how to automate Junos with SaltStack
 
 # About SaltStack
