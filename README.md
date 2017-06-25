@@ -24,10 +24,10 @@ ansible vs saltstack vs stackstorm: https://medium.com/@anthonypjshaw/ansible-v-
 - salt master.  
 - salt minions (agents) 
 - salt proxies (enables master to control devices without minion). Examples include
- - devices that could run a minion, but for whatver reasons, don't.
- - devices that cannot run a standard salt-minion
- - devices with limited CPU or memory
- - IoT
+    - devices that could run a minion, but for whatver reasons, don't.
+    - devices that cannot run a standard salt-minion
+    - devices with limited CPU or memory
+    - IoT
 
 # Junos automation with Saltstack
 
