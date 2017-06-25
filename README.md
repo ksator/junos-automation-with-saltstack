@@ -21,7 +21,7 @@ Salt competes primarily with Puppet, Chef, Ansible, and StackStorm.
 ansible vs saltstack vs stackstorm: https://medium.com/@anthonypjshaw/ansible-v-s-salt-saltstack-v-s-stackstorm-3d8f57149368  
 
 # SaltStack architecture: 
-Client server model: minions and master.  
+Client server model: salt minions (agents) and salt master.  
 proxy: enables master to control devices without minion. Examples include:  
 - devices that could run a minion, but for whatver reasons, don't.
 - devices that cannot run a standard salt-minion
@@ -56,7 +56,7 @@ At that time you will be able to install Nitrogen using
 ```
 # pip install salt
 ```
-Meanwhile, you can install Nitrogen from the salt github repository (https://github.com/saltstack/salt) using the branch 2017.7:  
+Meanwhile, you can install Nitrogen from the salt github repository (https://github.com/saltstack/salt) using the git branch 2017.7:  
 ```
 # pip install git+https://github.com/saltstack/salt.git@2017.7
 ```
