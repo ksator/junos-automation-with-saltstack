@@ -69,16 +69,16 @@ salt 2017.7.0-202-g3c8dee0 (Nitrogen)
 
 ## salt master: 
 
-### The salt-master is configured via the master configuration file. 
+The salt-master is configured via the master configuration file. 
 https://docs.saltstack.com/en/latest/ref/configuration/master.html
-The configuration file for the salt-master is located at /etc/salt/master by default. 
+The configuration file for the salt-master is located at ```/etc/salt/master``` by default. 
 
 ### file_roots: 
 Salt runs a file server to deliver files to minions. This file server is built into the master daemon and does not require a dedicated port.
 Default location is /srv/pillar.
 
 ### pillar: 
-The default location for the pillar is in /srv/pillar.
+The default location for the pillar is in ```/srv/pillar```.
 The pillar location can be configured via the pillar_roots option inside the master configuration file. 
 sls files. 
 the pillar has a top file. 
@@ -89,14 +89,15 @@ kind of ansible playbooks
 
 ## salt-minion
 the salt-minion is configured via the minion configuration file.
-By default, the salt-minion configuration will be in /etc/salt/minion.
+By default, the salt-minion configuration will be in ```/etc/salt/minion```.
 
 ## salt-proxy
-Proxy minions can now be configured in /etc/salt/proxy or /etc/salt/proxy.d instead of just pillar. Configuration format is the same as it would be in pillar.
+Proxy minions can now be configured in ```/etc/salt/proxy``` or ```/etc/salt/proxy.d``` instead of just pillar. 
+Configuration format is the same as it would be in pillar.
 
 ## Reactor 
-Reactor sls files should be placed in the /srv/reactor/ directory for consistency between environments, but this is not currently enforced by Salt.
+Reactor sls files should be placed in the ```/srv/reactor/``` directory for consistency between environments, but this is not currently enforced by Salt.
 Reactor sls files follow a similar format to other sls files in Salt. By default they are written in YAML and can be templated using Jinja
-Reactor SLS files are mapped to event in the master conf file /etc/salt/master or /etc/salt/master.d/reactor.conf
-support for salt:// file paths.
+Reactor SLS files are mapped to event in the master conf file ```/etc/salt/master``` or ```/etc/salt/master.d/reactor.conf```
+support for ```salt://``` file paths.
 
