@@ -1,21 +1,4 @@
 
-# Junos automation with Saltstack
-
-SaltStack supports Junos automation with a Junos proxy: 
-- it provides [execution modules for junos](https://docs.saltstack.com/en/latest/ref/modules/all/salt.modules.junos.html) and [state modules for junos](https://docs.saltstack.com/en/latest/ref/states/all/salt.states.junos.html)
-- Junos proxy controls junos devices without installing salt on device. There is no salt-minion.  
-- It uses Junos API: junos-eznc python library (pyez) and netconf.  
-- Junos facts are stored in grains.  
-
-Apart from that there is a junos syslog engine: 
- - listens to syslog events 
- - extracts event information 
- - sends it on the master/minion event bus.
- - Control the type of events to be sent.
- - Salt reactors has the ability to take actions according to these events (event driven automation).
-
-Salt supports also Napalm (Network Automation and Programmability Abstraction Layer with Multivendor support). So you can also use it to automate Junos.  
-
 # SaltStack versions: 
 Nitrogen has a better network automation support than Carbon.   
 https://docs.saltstack.com/en/latest/topics/releases/version_numbers.html  
