@@ -23,7 +23,7 @@ ansible vs saltstack vs stackstorm: https://medium.com/@anthonypjshaw/ansible-v-
 # saltstack architecture: 
 Client server model: minions and master.  
 proxy: enables master to control devices without minion. Examples include:  
-- devices that could run a minion, but for whatver reasons, will not.
+- devices that could run a minion, but for whatver reasons, don't.
 - devices that cannot run a standard salt-minion
 - devices with limited CPU or memory
 - IoT
