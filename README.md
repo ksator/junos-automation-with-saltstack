@@ -28,13 +28,14 @@ ansible vs saltstack vs stackstorm: https://medium.com/@anthonypjshaw/ansible-v-
     - devices that cannot run a standard salt-minion
     - devices with limited CPU or memory
     - IoT
+    - proprietary OS
 
 # Junos automation with Saltstack
 
 SaltStack supports Junos automation with a Junos proxy: 
 - it provides execution modules and state modules for junos.  
 - Junos proxy controls junos devices without installing salt on device. There is no salt-minion.  
-- It uses Junos API (pyez and netconf).  
+- It uses Junos API: junos-eznc python library (pyez) and netconf.  
 - Junos facts are stored in grains.  
 
 Apart from that there is a junos syslog engine: 
