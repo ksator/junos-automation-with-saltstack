@@ -10,7 +10,7 @@ SaltStack is an event driven infrastructure tool (like StackStorm), with good ne
 
 Salt is a remote execution tool and configuration management system: 
 - remote execution:  run commands on various machines in parallel with a flexible targeting system (salt execution modules)
-- configuration management: establishes a client-server model to bring infrastructure components in line with a given policy (salt state modules)
+- configuration management: establishes a client-server model to bring infrastructure components in line with a given policy (salt state modules in sls files)
 
 Written in Python  
 open source (https://github.com/saltstack).   
