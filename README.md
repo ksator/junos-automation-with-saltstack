@@ -1,31 +1,3 @@
-# About SaltStack
-
-SaltStack is an event driven infrastructure tool (like StackStorm), with good network automation capabilities.  
-- SaltStack is the company.    
-- Salt Open is the open source tool I am using in this repo.  
-- SaltStack Enterprise is the software they sell and support.   
-
-Salt is a remote execution tool and configuration management system: 
-- remote execution:  run commands on various machines in parallel with a flexible targeting system (salt execution modules)
-- configuration management: establishes a client-server model to bring infrastructure components in line with a given policy (salt state modules in sls files)
-
-Written in Python  
-open source (https://github.com/saltstack).   
-https://saltstack.com/  
-
-# SaltStack competition  
-Salt competes primarily with Puppet, Chef, Ansible, and StackStorm.  
-ansible vs saltstack vs stackstorm: https://medium.com/@anthonypjshaw/ansible-v-s-salt-saltstack-v-s-stackstorm-3d8f57149368  
-
-# SaltStack architecture: 
-- salt master.  
-- salt minions (agents) 
-- salt proxies (enables master to control devices without minion). Examples include:
-    - devices that could run a minion, but for whatver reasons, don't.
-    - devices that cannot run a standard salt-minion
-    - devices with limited CPU or memory
-    - IoT
-    - proprietary OS
 
 # Junos automation with Saltstack
 
