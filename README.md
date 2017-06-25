@@ -12,7 +12,8 @@ Salt is a remote execution tool and configuration management system:
 - remote execution:  run commands on various machines in parallel with a flexible targeting system (salt execution modules)
 - configuration management: establishes a client-server model to bring infrastructure components in line with a given policy (salt state modules)
 
-Written in Python, open source (https://github.com/saltstack).   
+Written in Python  
+open source (https://github.com/saltstack).   
 https://saltstack.com/  
 
 # SaltStack competition  
