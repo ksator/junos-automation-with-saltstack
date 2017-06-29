@@ -1,0 +1,26 @@
+file_roots:
+ base:
+  - /srv/salt
+
+pillar_roots:
+ base:
+  - /srv/pillar
+
+engines_dirs: 
+  - /srv/engines
+
+engines: 
+  - junos_syslog: 
+      port: 516
+
+reactor:
+  - 'jnpr/syslog/*/UI_COMMIT_COMPLETED':
+        - /srv/reactor/on_commit.sls
+
+
+nodegroups: 
+ group1: 'L@ex4200-7,vqfx01'
+ group2: 
+  - minion_1
+  - ex4200-7
+ group3: 'G@os_family:junos or minion_1'

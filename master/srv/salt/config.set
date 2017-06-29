@@ -1,0 +1,6 @@
+{% if grains['junos_facts']['personality'] != "SWITCH" %}
+set system host-name {{ template_vars['dev_name'] }}
+{% else %}
+set system host-name {{ pillar["name"] }} 
+{% endif %}
+
