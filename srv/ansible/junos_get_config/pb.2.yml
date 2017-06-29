@@ -1,0 +1,35 @@
+---
+ - name: create a directory 
+   hosts: localhost
+   gather_facts: no
+   
+   tasks:
+    
+   - name: create a directory
+     file: path={{playbook_dir}}/configs state=directory
+     
+ - name: Retrieve configuration from junos devices
+   hosts: "{{ target }}" 
+   roles:
+    - Juniper.junos
+   connection: local
+   gather_facts: no
+   
+   tasks:
+   
+   - name: remove old files from the configs directory for each host
+     file: path={{playbook_dir}}/configs/{{inventory_hostname}}.conf state=absent
+     
+   - name: include vars
+     include_vars: "{{playbook_dir}}/vars.yml"
+     
+   - name: Retrieve configuration from junos devices
+     junos_get_config:
+      host={{ junos_host }}
+      port={{ junos_port }}
+      user={{ USERNAME }}
+      passwd={{ DEVICE_PASSWORD }}
+      dest={{playbook_dir}}/configs/{{ inventory_hostname }}.conf
+      format=text
+      logfile={{playbook_dir}}/junos_get_config.log
+      filter=interfaces
