@@ -1,5 +1,5 @@
 This repository is about how to automate Junos with SaltStack.  
-It also shows how to do **Event-Driven** Junos automation using SaltStack.  
+It also details how to do **Event-Driven** Junos automation using SaltStack.  
 
 The repository's documentation is on [wiki](https://github.com/ksator/junos-automation-with-saltstack/wiki)  
 
